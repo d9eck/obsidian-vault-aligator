@@ -82,7 +82,16 @@ classDef infra fill:#ecfeff,stroke:#0891b2,color:#0b1220
 - **Editorial & experience content**: pages, blocks, hero cards, navigation, campaign landing pages.
 - **Product editorial overlays** (PDP enhancements): “marketing headline”, “feature bullets”, “hero images override”, “buying guide”, etc.
 - Keystone’s schema is defined in **Lists** (fields, UI config, hooks, access control), which drives both GraphQL and Admin UI.
+- https://keystonejs.com/
+- https://keystonejs.com/docs/walkthroughs/lesson-1
+### Prisma
+https://vercel.com/marketplace/prisma
+https://www.prisma.io/pricing
 
+### MeiliSearch
+https://www.meilisearch.com/
+https://docs.medusajs.com/v1/plugins/search/meilisearch
+https://github.com/meilisearch/nextjs-starter-meilisearch-table
 ### Next.js Storefront (Vercel)
 
 - Runs the Medusa starter and renders:
@@ -98,13 +107,18 @@ classDef infra fill:#ecfeff,stroke:#0891b2,color:#0b1220
 - Storefront talks to:
     - **Medusa** via Store APIs (`/store/*`)
     - **KeyStone via direct Prisma Postgres** directly for CMS content (via Prisma Client) [[prisma.io]](https://www.prisma.io/docs/postgres/integrations/vercel), [[prisma.io]](https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel)
-    - MailiSearch
+    - MeiliSearch
 
-### Medusa (on‑prem)
+### Stripe & Squareup Payment Gateways
+https://squareup.com/es/es/payments/tap-to-pay
+
+### Medusa backend app (on‑prem)
 
 - Source of truth for commerce behavior.
 - Exposes REST endpoints (Store APIs).
 - You can create custom endpoints via **API Routes** under `src/api/.../route.ts`.
+- Install: https://docs.medusajs.com/learn/installation/docker
+- User guide: https://docs.medusajs.com/user-guide
 
 ### Akeneo (on‑prem)
 
@@ -114,6 +128,7 @@ classDef infra fill:#ecfeff,stroke:#0891b2,color:#0b1220
 ### Wiredoor
 
 - Exposes your on‑prem Medusa endpoints (and optionally other internal services) through a secure reverse WireGuard tunnel and NGINX proxy.
+- https://www.wiredoor.net/documentation/quickstart
 
 ---
 
