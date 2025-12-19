@@ -75,6 +75,8 @@ classDef infra fill:#ecfeff,stroke:#0891b2,color:#0b1220
 
 # Elements & responsibilities (what lives where)
 
+
+
 ### Keystone (on‑prem server)
 
 - **Editorial & experience content**: pages, blocks, hero cards, navigation, campaign landing pages.
@@ -86,9 +88,17 @@ classDef infra fill:#ecfeff,stroke:#0891b2,color:#0b1220
 - Runs the Medusa starter and renders:
     - commerce flows (cart/checkout)
     - content-driven pages using Keystone content
+- Links
+	- https://docs.medusajs.com/resources/nextjs-starter
+	- https://github.com/medusajs/nextjs-starter-medusa
+	- https://vercel.com/templates/ecommerce/medusa
+	- https://next.medusajs.com/
+	- https://docs.medusajs.com/resources/storefront-development
+	- https://github.com/keystonejs/keystone/tree/main/examples/framework-nextjs-pages-directory
 - Storefront talks to:
     - **Medusa** via Store APIs (`/store/*`)
-    - **Prisma Postgres** directly for CMS content (via Prisma Client) [[prisma.io]](https://www.prisma.io/docs/postgres/integrations/vercel), [[prisma.io]](https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel)
+    - **KeyStone via direct Prisma Postgres** directly for CMS content (via Prisma Client) [[prisma.io]](https://www.prisma.io/docs/postgres/integrations/vercel), [[prisma.io]](https://www.prisma.io/docs/orm/prisma-client/deployment/serverless/deploy-to-vercel)
+    - MailiSearch
 
 ### Medusa (on‑prem)
 
