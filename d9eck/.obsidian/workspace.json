@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "615585273b815409",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2b6d068b1e24ae0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "190513297eb4dd1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mimica/Mimica ecommerce architecture.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mimica ecommerce architecture"
+            }
+          },
+          {
+            "id": "957c4e9e718a3f37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mimica/Mimica ecommerce architecture.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mimica ecommerce architecture"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "872ca298825db9a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dad7e725f201ade",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82432acce342ff5f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6b49d2a586c16b17",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2bb29ecd499d53d3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "49a66caab48d3bbf",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c732e242dc7c0a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78d03aa52dc8f47c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Mimica/Mimica ecommerce architecture.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Mimica ecommerce architecture"
+            }
+          },
+          {
+            "id": "938c16f71066295a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Mimica/Mimica ecommerce architecture.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Mimica ecommerce architecture"
+            }
+          },
+          {
+            "id": "1f0ef301580684f6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b1ef4eb87331e446",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f72cb762c8c3ce9d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Mimica/Mimica ecommerce architecture.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Mimica ecommerce architecture"
+            }
+          },
+          {
+            "id": "5ce8dc174f33cd42",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "91531915d5305046",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "957c4e9e718a3f37",
+  "lastOpenFiles": [
+    "kanban.md",
+    "Program Plan - MACH Commerce (Medusa + Keystone + Akeneo.md",
+    "Untitled Kanban.md",
+    "Untitled.base",
+    "Welcome.md",
+    "Mimica/Mimica ecommerce architecture.md",
+    "Mimica/Medusa Headless Commerce-2025-12-19-105501.svg",
+    "Untitled.canvas",
+    "Architecture.md",
+    "Medusa Headless Commerce-2025-12-19-105501 1.svg",
+    "Medusa Headless Commerce-2025-12-19-105501 2.svg",
+    "create a link.md",
+    "Mimica"
+  ]
+}
