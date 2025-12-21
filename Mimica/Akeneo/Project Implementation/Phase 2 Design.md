@@ -2,7 +2,6 @@ Below is the **expanded Phase 2 – Data Modeling & Taxonomy Blueprint** for Ake
 This document is ready for Obsidian—fully markdown, clean structure, no dependencies.
 
 ---
-
 # Phase 2 – Data Modeling & Taxonomy Blueprint
 
 ### Akeneo PIM v7 – Ceramics Manufacturing
@@ -37,13 +36,13 @@ Below is the recommended final family list, **optimized for ceramics**.
 
 ### 2.1 Families to Configure
 
-|Family Name|Purpose|Notes|
-|---|---|---|
-|**Art Piece (Unique)**|Sculptures, wall art, one-of-a-kind works|No variants. Rich storytelling.|
-|**Functional Tableware**|Plates, bowls, cups, mugs|Often variant-based (size, glaze).|
-|**Vessels**|Vases, jars, pitchers|May have glaze or size variants.|
-|**Limited Edition Series**|Numbered series of artworks or tableware|Requires edition tracking.|
-|**Decorative Tiles** _(optional)_|Tiles, panels|Dimensional attributes important.|
+| Family Name                | Purpose                                   | Notes                              |
+| -------------------------- | ----------------------------------------- | ---------------------------------- |
+| **Art Piece (Unique)**     | Sculptures, wall art, one-of-a-kind works | No variants. Rich storytelling.    |
+| **Functional Tableware**   | Plates, bowls, cups, mugs                 | Often variant-based (size, glaze). |
+| **Vessels**                | Vases, jars, pitchers                     | May have glaze or size variants.   |
+| **Limited Edition Series** | Numbered series of artworks or tableware  | Requires edition tracking.         |
+| **Decorative Tiles**       | Tiles, panels                             | Dimensional attributes important.  |
 
 
 ---
