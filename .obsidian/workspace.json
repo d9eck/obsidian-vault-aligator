@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
+                "file": "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Phase 1 Core Setup"
+              "title": "Phase 2 Design"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
+                "file": "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Phase 1 Core Setup"
+              "title": "Backlinks for Phase 2 Design"
             }
           },
           {
@@ -172,8 +172,19 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "1dc9cca0a1d0c056",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -197,9 +208,9 @@
   },
   "active": "68c954fe23663267",
   "lastOpenFiles": [
-    "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
     "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
     "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
+    "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
     "Mimica/Akeneo/ToDo.md",
     "Mimica/Medusa Headless Commerce-2025-12-19-105501.svg",
     "Mimica/Akeneo/Promtp - PIM implementation.md",

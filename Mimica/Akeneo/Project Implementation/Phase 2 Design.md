@@ -1,8 +1,6 @@
 Below is the **expanded Phase 2 – Data Modeling & Taxonomy Blueprint** for Akeneo PIM v7, designed specifically for your ceramic manufacturing business.  
 This document is ready for Obsidian—fully markdown, clean structure, no dependencies.
 
-If you'd like, I can next generate **import-ready CSV templates**, **attribute naming conventions**, or **configurable Akeneo job lists**.
-
 ---
 
 # Phase 2 – Data Modeling & Taxonomy Blueprint
