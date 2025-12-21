@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
+                "file": "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Akeneo PIM project plan"
+              "title": "Phase 1 Core Setup"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
+                "file": "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Akeneo PIM project plan"
+              "title": "Backlinks for Phase 1 Core Setup"
             }
           },
           {
@@ -197,14 +197,14 @@
   },
   "active": "68c954fe23663267",
   "lastOpenFiles": [
-    "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
+    "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
     "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
+    "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
     "Mimica/Akeneo/ToDo.md",
     "Mimica/Medusa Headless Commerce-2025-12-19-105501.svg",
     "Mimica/Akeneo/Promtp - PIM implementation.md",
     "Mimica/Akeneo/Install Akeneo.md",
     "Mimica/Mimica ecommerce architecture.md",
-    "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
     "Mimica/Akeneo/Project Implementation",
     "Mimica/Akeneo",
     "Mimica",
