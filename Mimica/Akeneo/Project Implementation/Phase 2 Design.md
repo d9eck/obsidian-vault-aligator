@@ -62,6 +62,467 @@ Best for: field tiles, relief tiles, panels
 **Family:** `SETS_BUNDLES`  
 Best for: place settings, curated sets  
 
+
+
+### 2.2 Family Variants
+
+## Family: `ART_UNIQUE`
+
+### Variant definition
+
+**No variants (no Family Variant).**  
+Reason: each piece is one sellable item; variants would create fake structure.
+
+---
+
+## Family: `TABLEWARE_FLAT`
+
+### Family Variant
+
+- **Code:** `FV_TW_FLAT_SIZE_GLAZE`
+    
+- **Levels:** 2
+    
+- **Level 1 axis:** `size_code` (Dinner / Salad / Dessert / Platter…)
+    
+- **Level 2 axis:** `glaze_primary` _(label as “Glaze / Colorway”)_
+    
+
+### Attribute distribution (Akeneo UI columns)
+
+**COMMON (root product model)**
+
+- `product_name`, `short_description`, `long_description`
+    
+- `product_form`
+    
+- `collection_line`, `profile_shape`
+    
+- `clay_body`
+    
+- `handmade_variation_note`
+    
+- Safety & care (constant across the line):
+    
+    - `food_contact_intended`, `food_safe_statement`, `lead_cadmium_compliance`
+        
+    - `dishwasher_safe`, `microwave_safe`
+        
+- Story/design:
+    
+    - `design_notes`
+        
+- Ops:
+    
+    - `country_of_origin`
+        
+
+**LEVEL 1 (by size_code) – sub product model**
+
+- Axis: `size_code`
+    
+- Dimensions & physical:
+    
+    - `diameter`, `height`, `foot_diameter`, `rim_width`
+        
+- Use:
+    
+    - `stackable`
+        
+- Logistics/pricing (recommended here):
+    
+    - `item_weight`
+        
+    - `price` _(scopable per channel)_
+        
+
+**LEVEL 2 (by glaze/colorway) – variant products (sellable SKUs)**
+
+- Axis: `glaze_primary` (“Glaze / Colorway”)
+    
+- Commercial identity:
+    
+    - `sku`
+        
+- Media (glaze-specific):
+    
+    - `image_main`, `image_topdown`, `image_side_profile`
+        
+- Appearance (if glaze drives it):
+    
+    - `finish` _(unless you keep finish constant for a whole line)_
+        
+
+**If you truly need price by glaze:** move `price` from Level 1 → Level 2.
+
+---
+
+## Family: `TABLEWARE_HOLLOW`
+
+### Family Variant
+
+- **Code:** `FV_TW_HOLLOW_SIZE_GLAZE`
+    
+- **Levels:** 2
+    
+- **Level 1 axis:** `size_code` (Ramekin / Cereal / Pasta / Serving…)
+    
+- **Level 2 axis:** `glaze_primary` (“Glaze / Colorway”)
+    
+
+### Attribute distribution
+
+**COMMON**
+
+- `product_name`, `short_description`, `long_description`
+    
+- `product_form`
+    
+- `collection_line`
+    
+- `clay_body`
+    
+- `handmade_variation_note`
+    
+- Safety & care:
+    
+    - `food_contact_intended`, `food_safe_statement`, `lead_cadmium_compliance`
+        
+    - `dishwasher_safe`, `microwave_safe`
+        
+- Story:
+    
+    - `serving_suggestions`
+        
+- Ops:
+    
+    - `country_of_origin`
+        
+
+**LEVEL 1 (by size_code)**
+
+- Axis: `size_code`
+    
+- Dimensions/functional:
+    
+    - `diameter`, `height`, `depth`, `capacity`
+        
+- Use:
+    
+    - `stackable`, `nesting_note`
+        
+- Logistics/pricing:
+    
+    - `item_weight`, `price`
+        
+
+**LEVEL 2 (by glaze/colorway)**
+
+- Axis: `glaze_primary`
+    
+- `sku`
+    
+- Media:
+    
+    - `image_main`, `image_in_hand` _(scale perception matters a lot for bowls)_
+        
+- Appearance:
+    
+    - `finish`
+        
+
+---
+
+## Family: `DRINKWARE`
+
+### Family Variant
+
+- **Code:** `FV_DRINK_CAPACITY_GLAZE`
+    
+- **Levels:** 2
+    
+- **Level 1 axis:** `capacity_code` (Espresso / 200ml / 350ml / Mug…)
+    
+- **Level 2 axis:** `glaze_primary` (“Glaze / Colorway”)
+    
+
+### Attribute distribution
+
+**COMMON**
+
+- `product_name`, `short_description`, `long_description`
+    
+- `product_form`
+    
+- `collection_line`
+    
+- `clay_body`
+    
+- `handmade_variation_note`
+    
+- Safety & care:
+    
+    - `food_contact_intended`, `food_safe_statement`, `lead_cadmium_compliance`
+        
+    - `dishwasher_safe`, `microwave_safe`
+        
+- Ops:
+    
+    - `country_of_origin`
+        
+
+**LEVEL 1 (by capacity_code)**
+
+- Axis: `capacity_code`
+    
+- Functional/ergonomics:
+    
+    - `capacity`, `hot_drink_suitable`
+        
+    - `handle_type`, `lip_profile`
+        
+    - `sip_feel_note`
+        
+- Dimensions/logistics:
+    
+    - `height`, `diameter`, `item_weight`
+        
+- Pricing:
+    
+    - `price`
+        
+
+**LEVEL 2 (by glaze/colorway)**
+
+- Axis: `glaze_primary`
+    
+- `sku`
+    
+- Media:
+    
+    - `image_main`, `image_side_profile`
+        
+- Appearance:
+    
+    - `finish`
+        
+
+---
+
+## Family: `VESSELS`
+
+### Family Variant
+
+- **Code:** `FV_VESSELS_SIZE_GLAZE`
+    
+- **Levels:** 2
+    
+- **Level 1 axis:** `size_code` _(or your height band options: Small/Medium/Large)_
+    
+- **Level 2 axis:** `glaze_primary` (“Glaze / Colorway”)
+    
+
+### Attribute distribution
+
+**COMMON**
+
+- `product_name`, `short_description`, `long_description`
+    
+- `product_form`
+    
+- `vessel_type`
+    
+- `clay_body`
+    
+- `handmade_variation_note`
+    
+- Story:
+    
+    - `use_suggestions`
+        
+- Ops:
+    
+    - `country_of_origin`
+        
+
+**LEVEL 1 (by size_code)**
+
+- Axis: `size_code`
+    
+- Physical/functional:
+    
+    - `height`, `width`, `opening_diameter`, `capacity`
+        
+    - `watertight`
+        
+    - `has_handle`, `has_spout`
+        
+    - `food_contact_intended` _(pitchers/carafes: Yes; decor-only vases: No)_
+        
+    - `lead_cadmium_compliance` _(only if food-contact intended)_
+        
+- Care:
+    
+    - `dishwasher_safe` _(if applicable)_
+        
+- Logistics/pricing:
+    
+    - `item_weight`, `price`
+        
+
+**LEVEL 2 (by glaze/colorway)**
+
+- Axis: `glaze_primary`
+    
+- `sku`
+    
+- Media:
+    
+    - `image_main`, `image_in_context`
+        
+- Appearance:
+    
+    - `finish`
+        
+
+---
+
+## Family: `TILES_DECOR`
+
+### Family Variant
+
+- **Code:** `FV_TILE_FORMAT_GLAZE`
+    
+- **Levels:** 2
+    
+- **Level 1 axis:** `tile_shape_size` (e.g., 2x6, 4x4, Hex…)
+    
+- **Level 2 axis:** `glaze_primary` (“Glaze / Colorway”)
+    
+
+### Attribute distribution
+
+**COMMON**
+
+- `product_name`, `short_description`, `long_description`
+    
+- `tile_product_type`
+    
+- `clay_body`
+    
+- `handmade_variation_note` _(tile version)_
+    
+- Ops:
+    
+    - `country_of_origin`
+        
+
+**LEVEL 1 (by tile_shape_size)**
+
+- Axis: `tile_shape_size`
+    
+- Geometry/spec:
+    
+    - `nominal_length`, `nominal_width`, `actual_length`, `actual_width`, `thickness`
+        
+    - `edge_type`
+        
+- Performance & suitability:
+    
+    - `water_absorption_pct`, `frost_resistant`, `application_area`
+        
+    - `dcof_wet` _(required when floor application is allowed)_
+        
+    - `shade_variation`
+        
+- Commercial/fulfillment:
+    
+    - `made_to_order`, `lead_time_weeks`
+        
+- Packaging:
+    
+    - `pieces_per_box`, `coverage_per_box_sqm`, `box_weight`
+        
+- Install:
+    
+    - `recommended_grout_joint_mm`
+        
+- Docs (usually format-level):
+    
+    - `file_spec_sheet`, `file_install_guide`
+        
+- Pricing/logistics (recommended here):
+    
+    - `price`, `item_weight` _(or keep box weight only; depends on your shipping model)_
+        
+
+**LEVEL 2 (by glaze/colorway)**
+
+- Axis: `glaze_primary`
+    
+- `sku`
+    
+- Media (glaze-dependent):
+    
+    - `image_main`, `image_installed`
+        
+- Story/compliance notes:
+    
+    - `variation_note`
+        
+    - `prop65_warning` _(only if selling into CA/US and applicable)_
+        
+
+**If finish is independently selectable (Matte/Gloss for the same glaze option):**
+
+- Add **a second Level 2 axis**: `finish`  
+    This increases variant count, but it’s the cleanest way when finish is truly a selectable option.
+    
+
+---
+
+## Family: `SETS_BUNDLES`
+
+
+- **Code:** `FV_SET_GLAZE`
+    
+- **Levels:** 1
+    
+- **Level 1 axis:** `glaze_primary` (“Glaze / Colorway”)
+    
+
+**COMMON (root product model)**
+
+- `product_name`, `short_description`, `long_description`
+    
+- `bundle_type`, `bundle_components_text`, `bundle_serves`
+    
+- `care_instructions`
+    
+- Safety:
+    
+    - `food_contact_intended`, `lead_cadmium_compliance`
+        
+- Ops:
+    
+    - `country_of_origin`
+        
+
+**LEVEL 1 (by glaze/colorway) – variant products**
+
+- Axis: `glaze_primary`
+    
+- `sku`
+    
+- `price`
+    
+- `image_main`, `image_components_flatlay`
+    
+- `bundle_components` _(associations to component SKUs per glaze)_
+    
+- `item_weight`
+
+
 ---
 
 ## 4. Category Trees
