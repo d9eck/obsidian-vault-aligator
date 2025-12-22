@@ -32,18 +32,70 @@ Before configuring anything in Akeneo, the data model must follow principles tha
 
 ## 2. Product Families – Final Structure
 
+In **Akeneo PIM v7 CE**, a product belongs to **one Family** (one attribute set + completeness rules). That means your families should be **stable and operationally meaningful** (what attributes you must capture), not “marketing concepts” that cut across types.
 Below is the recommended final family list, **optimized for ceramics**.
 
 ### 2.1 Families to Configure
 
-| Family Name                | Purpose                                   | Notes                              |
-| -------------------------- | ----------------------------------------- | ---------------------------------- |
-| **Art Piece (Unique)**     | Sculptures, wall art, one-of-a-kind works | No variants. Rich storytelling.    |
-| **Functional Tableware**   | Plates, bowls, cups, mugs                 | Often variant-based (size, glaze). |
-| **Vessels**                | Vases, jars, pitchers                     | May have glaze or size variants.   |
-| **Limited Edition Series** | Numbered series of artworks or tableware  | Requires edition tracking.         |
-| **Decorative Tiles**       | Tiles, panels                             | Dimensional attributes important.  |
 
+Below is a pragmatic structure that balances **completeness**, **variant modeling**, and **team usability**:
+
+### 1) Art & One-of-a-kind Works
+
+**Family:** `ART_UNIQUE`  
+Best for: sculptures, wall pieces, one-off decorative objects  
+Why: you’ll need richer storytelling + provenance fields (and less variant logic).
+
+**Must-have attribute ideas (ceramics-aware):**
+
+- Technique (handbuilt / thrown / slab / sculpted)
+    
+- Clay body (stoneware/porcelain/earthenware + notes)
+    
+- Firing (oxidation/reduction; cone range)
+    
+- Glaze name(s), surface finish, special effects (crystalline, ash, crawling, etc.)
+    
+- Signature/mark, year made
+    
+- **Uniqueness** statement (what makes this piece singular)
+    
+
+### 2) Tableware — Flatware
+
+**Family:** `TABLEWARE_FLAT`  
+Best for: plates, platters, trays  
+Why: diameter/foot/rim/stacking attributes are essential and consistent.
+
+### 3) Tableware — Hollowware
+
+**Family:** `TABLEWARE_HOLLOW`  
+Best for: bowls (cereal/pasta/serving), ramekins  
+Why: **capacity + depth profile** matters a lot and should be required.
+
+### 4) Drinkware
+
+**Family:** `DRINKWARE`  
+Best for: cups, mugs, tumblers  
+Why: handle type, capacity, lip feel notes, thermal comfort become required.
+
+### 5) Vessels
+
+**Family:** `VESSELS`  
+Best for: vases, pitchers, jars, carafes  
+Why: you’ll want **watertightness**, spout/handle presence, opening diameter, etc.
+
+### 6) Tiles & Architectural Ceramics
+
+**Family:** `TILES_DECOR`  
+Best for: field tiles, relief tiles, panels  
+Why: tile needs a different technical schema (size/thickness/edge/installation constraints). Heath/Fireclay-style configurability is a different universe than a mug. [Heath Ceramics+2Fireclay Tile+2](https://www.heathceramics.com/collections/vases-objects)
+
+### 7) Sets & Bundles
+
+**Family:** `SETS_BUNDLES`  
+Best for: place settings, curated sets  
+Why: sets behave like their own commercial object (components, packaging, bundle logic). This is prominent in tableware leaders.
 
 ---
 
