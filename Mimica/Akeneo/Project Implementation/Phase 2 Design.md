@@ -40,62 +40,27 @@ Below is the recommended final family list, **optimized for ceramics**.
 
 Below is a pragmatic structure that balances **completeness**, **variant modeling**, and **team usability**:
 
-### 1) Art & One-of-a-kind Works
-
+#### 1) Art & One-of-a-kind Works
 **Family:** `ART_UNIQUE`  
 Best for: sculptures, wall pieces, one-off decorative objects  
-Why: you’ll need richer storytelling + provenance fields (and less variant logic).
-
-**Must-have attribute ideas (ceramics-aware):**
-
-- Technique (handbuilt / thrown / slab / sculpted)
-    
-- Clay body (stoneware/porcelain/earthenware + notes)
-    
-- Firing (oxidation/reduction; cone range)
-    
-- Glaze name(s), surface finish, special effects (crystalline, ash, crawling, etc.)
-    
-- Signature/mark, year made
-    
-- **Uniqueness** statement (what makes this piece singular)
-    
-
-### 2) Tableware — Flatware
-
+#### 2) Tableware — Flatware
 **Family:** `TABLEWARE_FLAT`  
 Best for: plates, platters, trays  
-Why: diameter/foot/rim/stacking attributes are essential and consistent.
-
-### 3) Tableware — Hollowware
-
+#### 3) Tableware — Hollowware
 **Family:** `TABLEWARE_HOLLOW`  
 Best for: bowls (cereal/pasta/serving), ramekins  
-Why: **capacity + depth profile** matters a lot and should be required.
-
-### 4) Drinkware
-
+#### 4) Drinkware
 **Family:** `DRINKWARE`  
 Best for: cups, mugs, tumblers  
-Why: handle type, capacity, lip feel notes, thermal comfort become required.
-
-### 5) Vessels
-
+#### 5) Vessels
 **Family:** `VESSELS`  
 Best for: vases, pitchers, jars, carafes  
-Why: you’ll want **watertightness**, spout/handle presence, opening diameter, etc.
-
-### 6) Tiles & Architectural Ceramics
-
+#### 6) Tiles & Architectural Ceramics
 **Family:** `TILES_DECOR`  
 Best for: field tiles, relief tiles, panels  
-Why: tile needs a different technical schema (size/thickness/edge/installation constraints). Heath/Fireclay-style configurability is a different universe than a mug. [Heath Ceramics+2Fireclay Tile+2](https://www.heathceramics.com/collections/vases-objects)
-
-### 7) Sets & Bundles
-
+#### 7) Sets & Bundles
 **Family:** `SETS_BUNDLES`  
 Best for: place settings, curated sets  
-Why: sets behave like their own commercial object (components, packaging, bundle logic). This is prominent in tableware leaders.
 
 ---
 
