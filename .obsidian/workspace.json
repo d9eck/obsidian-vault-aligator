@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
-                "mode": "preview",
+                "file": "Mimica/Akeneo/Project Implementation/Product images.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Phase 2 Design"
+              "title": "Product images"
             }
           }
         ]
@@ -208,8 +208,9 @@
   },
   "active": "68c954fe23663267",
   "lastOpenFiles": [
-    "Mimica/Akeneo/Promtp - PIM implementation.md",
     "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
+    "Mimica/Akeneo/Project Implementation/Product images.md",
+    "Mimica/Akeneo/Promtp - PIM implementation.md",
     "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
     "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
     "Mimica/Mimica ecommerce architecture.md",
