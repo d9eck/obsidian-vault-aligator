@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "d9eck/test git.md",
+                "file": "d9eck/expediente Arag lavadora.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test git"
+              "title": "expediente Arag lavadora"
             }
           }
         ]
@@ -208,6 +208,8 @@
   },
   "active": "68c954fe23663267",
   "lastOpenFiles": [
+    "d9eck/test git.md",
+    "d9eck/expediente Arag lavadora.md",
     "Mimica/ResourceSpace/Metadata fields.md",
     "Mimica/Akeneo/Project Implementation/Product images.md",
     "Mimica/ResourceSpace",
@@ -219,7 +221,6 @@
     "Mimica/Mimica ecommerce architecture.md",
     "Mimica/Medusa Headless Commerce-2025-12-19-105501.svg",
     "conflict-files-obsidian-git.md",
-    "d9eck/test git.md",
     "Mimica/kanban.md",
     "Mimica/Program Plan - MACH Commerce (Medusa + Keystone + Akeneo.md",
     "Mimica/Akeneo/ToDo.md",
