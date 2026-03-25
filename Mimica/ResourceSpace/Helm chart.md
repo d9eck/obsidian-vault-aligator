@@ -4,7 +4,7 @@ helm install resourcespace . \
   --set admin.password=secret \
   --set s3.accessKey=minioadmin \
   --set s3.secretKey=minioadmin \
-  --set app.baseUrl=http://resourcespace
+  --set app.baseUrl=http://resourcespace-dev
 
 
 
