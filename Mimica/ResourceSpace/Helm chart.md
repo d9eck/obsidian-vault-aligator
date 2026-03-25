@@ -1,3 +1,25 @@
+
+# Build the official ResourceSpace image
+git clone https://github.com/resourcespace/docker.git /tmp/rs-docker
+docker build -t resourcespace:10.7 /tmp/rs-docker
+
+# Import into k3s
+docker save resourcespace:10.7 | sudo k3s ctr images import -
+
+# Verify
+sudo k3s ctr images list | grep resourcespace
+
+# Upgrade
+helm upgrade resourcespace . \
+  --set db.rootPassword=secret \
+  --set db.password=secret \
+  --set admin.password=secret \
+  --set s3.accessKey=minioadmin \
+  --set s3.secretKey=minioadmin \
+  --set app.baseUrl=http://resourcespace-dev
+
+
+
 helm install resourcespace . \
   --set db.rootPassword=secret \
   --set db.password=secret \
