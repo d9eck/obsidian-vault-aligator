@@ -4,7 +4,9 @@ git clone https://github.com/resourcespace/docker.git /tmp/rs-docker
 docker build -t resourcespace:10.7 /tmp/rs-docker
 
 # Import into k3s
-docker save resourcespace:10.7 | sudo k3s ctr images import -
+docker save resourcespace:10.7 -o /tmp/resourcespace.tar
+sudo k3s ctr images import /tmp/resourcespace.tar
+
 
 # Verify
 sudo k3s ctr images list | grep resourcespace
