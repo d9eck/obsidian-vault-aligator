@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mimica/Akeneo/Project Implementation/Product images.md",
+                "file": "Mimica/ResourceSpace/Metadata fields.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Product images"
+              "title": "Metadata fields"
             }
           }
         ]
@@ -208,14 +208,14 @@
   },
   "active": "68c954fe23663267",
   "lastOpenFiles": [
+    "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
+    "Mimica/Akeneo/Project Implementation/Product images.md",
     "Mimica/ResourceSpace/Metadata fields.md",
     "Mimica/Mimica ecommerce architecture.md",
     "d9eck/expediente Arag lavadora.md",
     "d9eck/test git.md",
-    "Mimica/Akeneo/Project Implementation/Product images.md",
     "Mimica/ResourceSpace",
     "d9eck/Archimate.md",
-    "Mimica/Akeneo/Project Implementation/Phase 2 Design.md",
     "Mimica/Akeneo/Promtp - PIM implementation.md",
     "Mimica/Akeneo/Project Implementation/Akeneo PIM project plan.md",
     "Mimica/Akeneo/Project Implementation/Phase 1 Core Setup.md",
