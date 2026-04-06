@@ -1,0 +1,1 @@
+This is described in the manual How to Use the ArchiMate Modeling Language to Support the TOGAF Standard. You can find this guide on The Open Group website, by searching for Guide G21E.

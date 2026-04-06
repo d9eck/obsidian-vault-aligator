@@ -77,13 +77,10 @@ classDef infra fill:#ecfeff,stroke:#0891b2,color:#0b1220
 
 
 
-### Keystone (on‑prem server)
+### CMS
 
 - **Editorial & experience content**: pages, blocks, hero cards, navigation, campaign landing pages.
-- **Product editorial overlays** (PDP enhancements): “marketing headline”, “feature bullets”, “hero images override”, “buying guide”, etc.
-- Keystone’s schema is defined in **Lists** (fields, UI config, hooks, access control), which drives both GraphQL and Admin UI.
-- https://keystonejs.com/
-- https://keystonejs.com/docs/walkthroughs/lesson-1
+- 
 ### Prisma
 https://vercel.com/marketplace/prisma
 https://www.prisma.io/pricing
@@ -112,7 +109,7 @@ https://github.com/meilisearch/nextjs-starter-meilisearch-table
 ### Stripe & Squareup Payment Gateways
 https://squareup.com/es/es/payments/tap-to-pay
 
-### Medusa backend app (on‑prem)
+### Medusa js - ecommerce backend app
 
 - Source of truth for commerce behavior.
 - Exposes REST endpoints (Store APIs).
@@ -120,15 +117,12 @@ https://squareup.com/es/es/payments/tap-to-pay
 - Install: https://docs.medusajs.com/learn/installation/docker
 - User guide: https://docs.medusajs.com/user-guide
 
-### Akeneo (on‑prem)
+### Akeneo - PIM
 
 - Source of truth for product enrichment and localization.
 - For near real-time sync: use Events API/webhooks (Akeneo 5.0+/SaaS).
 
-### Wiredoor
-
-- Exposes your on‑prem Medusa endpoints (and optionally other internal services) through a secure reverse WireGuard tunnel and NGINX proxy.
-- https://www.wiredoor.net/documentation/quickstart
+### ResourceSpace - DAM
 
 ---
 
