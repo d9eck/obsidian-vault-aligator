@@ -171,15 +171,6 @@ Recommended dependency order:
    
 
 2. What is the delete policy for upstream removals: deactivate, archive, unpublish, or hard delete?
-3. Which Directus signals are available for incremental sync: webhooks, revision IDs, `updated_at`, publish state, queue, or all of them?
-   Webhooks (Flows → HTTP action) - Directus Flows can fire HTTP webhooks on `items.create`, `items.update`, `items.delete`, and custom trigger events (including `flows.trigger` for manual/scheduled runs).
-   For idempotent, replayable mutations they need to be paired with a stable identifier (product_key, sku) on the payload.
-   
-   Revision IDs (directus_revisions)- Every mutation in Directus creates a row in directus_revisions with a monotonically increasing id, the collection, item (the record PK), data (the delta), and delta.
-   Role: Pull signal — your sync worker can poll GET /revisions?filter[id][gt]=<last_seen>&sort=id to get an ordered, replayable changelog.
-   This is your most reliable catch-up mechanism because:
-   Revisions survive missed webhooks.
-   The id acts as a cursor — safe to checkpoint and resume.
-   Works across bulk operations transparently.
-2. 
-3. Can you provide example payloads for one create, update, and delete event per domain?
+3. 
+4. 
+5. Can you provide example payloads for one create, update, and delete event per domain?
