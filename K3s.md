@@ -11,3 +11,21 @@ write-kubeconfig-group: "k3s-admins"
 sudo systemctl restart k3s
 
 newgrp k3s-admins
+
+
+  
+
+## 7. Source of Truth Matrix
+
+  
+
+| Data / capability            | System of record | Read by / replicated to          | Notes                                      |
+| ---------------------------- | ---------------- | -------------------------------- | ------------------------------------------ |
+| ecommerce data entities      | Directus         | Medusa                           | entities are: regions, currencies, markets |
+| Product family structure     | Directus         | Medusa, Storefront               | Canonical authoring lives in Directus      |
+| Variant definitions and SKUs | Directus         | Medusa, Storefront               | SKU is immutable                           |
+| Media assets and alt text    | Directus         | Storefront, optional Medusa refs | Directus DAM is authoritative              |
+| Base prices                  | Directus         | Medusa                           | Upstream authored prices                   |
+
+
+
