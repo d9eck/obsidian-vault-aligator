@@ -243,12 +243,5 @@ Recommended dependency order:
 3. Pricing projection
 
 ## 12. Open questions
-1. Please share the actual `channel_values` collection YAML so pricing field names, identities, and delete semantics can be made explicit.
-2. Confirm the exact publication eligibility matrix across `product_models`, `product_variants`, `products`, and `channel_values`.
-3. Confirm how hard deletes from Directus should be handled for each domain. Current assumption: deactivate or archive in Medusa unless a record never became commerce-visible.
-4. Confirm whether every touchpoint should map to a Medusa sales channel, or only transactional touchpoints such as the storefront and marketplaces with checkout implications.
-5. Please share example webhook payloads for:
-   - content update,
-   - publish / unpublish,
-   - delete,
-   - manual backfill via `flows.trigger`.
+
+1. Confirm the exact publication eligibility matrix across `product_models`, `product_variants`, `products`, and `channel_values`.
