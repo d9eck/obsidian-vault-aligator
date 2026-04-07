@@ -123,12 +123,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mimica/Medusa/Catalog Sync.md",
+                "file": "Mimica/Medusa/integrations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Catalog Sync"
+              "title": "integrations"
             }
           }
         ],
@@ -329,15 +329,15 @@
   },
   "active": "de7f63be61bc26d2",
   "lastOpenFiles": [
-    "Mimica/Medusa/Flows.md",
+    "Mimica/Medusa/Catalog Sync.md",
     "Mimica/Medusa/integrations.md",
+    "Mimica/Medusa/Flows.md",
     "Mimica/Medusa/integrations (2).md",
     "K3s.md",
     "Mimica/Program Plan - MACH Commerce (Medusa + Keystone + Akeneo.md",
     "Mimica/Medusa/Plan.md",
     "conflict-files-obsidian-git.md",
     "Mimica/Medusa Headless Commerce-2025-12-19-105501.svg",
-    "Mimica/Medusa/Catalog Sync.md",
     "Mimica/Medusa",
     "Mimica/Mimica ecommerce architecture.md",
     "d9eck/expediente Arag lavadora.md",
