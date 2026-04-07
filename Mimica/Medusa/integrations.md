@@ -250,15 +250,3 @@ Each sync domain is incomplete until it passes these tests:
 - reconcile can detect and repair drift,
 - replay by entity and replay by cursor/time window both work.
 
-## 13. Open questions
-1. Provide real Directus webhook payload examples for:
-   - content update,
-   - publish / unpublish,
-   - delete,
-   - manual or scheduled backfill.
-2. Confirm the webhook authentication scheme to enforce in Medusa:
-   - shared bearer token,
-   - HMAC signature header,
-   - IP allowlist,
-   - or a combined approach.
-3. Confirm whether a SKU's availability in a channel is defined solely by presence of a `products_channel_values` row, or whether there is an additional explicit channel-publication flag elsewhere in Directus.
