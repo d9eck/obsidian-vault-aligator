@@ -168,9 +168,32 @@ Recommended dependency order:
 ## 10. Open questions
 
 1. Does the storefront resolve variants fully in Directus, or do we want to project option values into Medusa too?
-   
+   **Resolve fully in Directus: everything display-facing**
+
+The storefront should **not** resolve localized option labels, swatches, or variant picker UX from Medusa. That data lives in Directus because:
+
+- Localized titles, descriptions, and slugs are Directus-authoritative (§7)
+- DAM assets (swatch images, variant imagery) live in Directus
+- Medusa has no localization model for catalog content — that's explicitly out of scope for it (§5)
+
+So the storefront's variant picker is assembled from Directus data, cross-referenced by `sku`.
+
+---
+
+### The Storefront Composition Pattern
+
+The practical result is a **two-fetch view model** on any PDP:
+
+```
+Directus  →  product family + localized option labels + swatch assets + slugs
+Medusa    →  per-variant availability + computed price + add-to-cart eligibility
+```
+
+These are joined on `sku` in the storefront's view-model composition layer (which §5 says the storefront owns). Neither system needs to know the other's full model.
 
 2. What is the delete policy for upstream removals: deactivate, archive, unpublish, or hard delete?
 3. 
 4. 
 5. Can you provide example payloads for one create, update, and delete event per domain?
+   will leverage event hooks. analyze this
+   https://directus.io/docs/guides/extensions/api-extensions/hooks
