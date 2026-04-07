@@ -50,15 +50,15 @@ Core boundary:
 
 ## 4. Identity and idempotency keys
 
-| Domain | Business key | Notes |
-| --- | --- | --- |
-| Region | `regions.code` | Immutable source identity. |
-| Touchpoint | `touchpoints.code` | Immutable source identity. |
-| Channel | `channels.code` | Generated from `touchpoint × region`; immutable. |
-| Product model | `product_models.id` | UUID source identity for authoring parent. |
-| Product variant group | `product_variants.id` | UUID source identity for L1 authoring group. |
-| SKU | `products.sku` | Immutable commerce identity. |
-| Channel price | `products.sku + channels.code` | One base price row per channel. |
+| Domain                | Business key                   | Notes                                            |
+| --------------------- | ------------------------------ | ------------------------------------------------ |
+| Region                | `regions.code`                 | Immutable source identity.                       |
+| Touchpoint            | `touchpoints.code`             | Immutable source identity.                       |
+| Channel               | `channels.code`                | Generated from `touchpoint × region`; immutable. |
+| Product model         | `product_models.id`            | UUID source identity for authoring parent.       |
+| Product variant group | `product_variants.id`          | UUID source identity for L1 authoring group.     |
+| SKU                   | `products.sku`                 | Immutable commerce identity.                     |
+| Channel price         | `products.sku + channels.code` | One base price row per channel.                  |
 
 Rules:
 - Every sync operation MUST be idempotent.
@@ -74,7 +74,6 @@ Rules:
 
 ### 5.2 Catalog
 A SKU is export-eligible only when all applicable upstream conditions are true:
-- `families.status = published`
 - `product_models.status = published`
 - `product_models.enabled = true`
 - `products.status = published`
