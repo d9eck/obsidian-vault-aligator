@@ -166,12 +166,11 @@ Recommended dependency order:
 3. Pricing projection
 
 ## 10. Open questions
-1. How does a Directus **market** map to Medusa: region only, sales channel only, or region + sales channel + provider/location links?
-   region + sales channel. In directus there are collections 
-2. Are **sales channels** and **stock locations** authored in Directus now, or should they remain Medusa-managed for the first release?
-3. Does the storefront resolve variants fully in Directus, or do we want to project option values into Medusa too?
-4. What is the exact Directus model for **base prices**: by SKU and currency, by market, by validity window, or another structure?
-5. What is the delete policy for upstream removals: deactivate, archive, unpublish, or hard delete?
-6. Which Directus signals are available for incremental sync: webhooks, revision IDs, `updated_at`, publish state, queue, or all of them?
-7. Can you provide the Directus collection definitions or YAML exports for markets, product families, variants, media, and prices?
-8. Can you provide example payloads for one create, update, and delete event per domain?
+
+1. Does the storefront resolve variants fully in Directus, or do we want to project option values into Medusa too?
+   
+
+2. What is the delete policy for upstream removals: deactivate, archive, unpublish, or hard delete?
+3. Which Directus signals are available for incremental sync: webhooks, revision IDs, `updated_at`, publish state, queue, or all of them?
+4. 
+5. Can you provide example payloads for one create, update, and delete event per domain?
