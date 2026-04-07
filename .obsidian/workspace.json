@@ -329,9 +329,10 @@
   },
   "active": "de7f63be61bc26d2",
   "lastOpenFiles": [
+    "Mimica/Medusa/Flows.md",
     "Mimica/Medusa/Catalog Sync.md",
     "Mimica/Medusa/integrations.md",
-    "Mimica/Medusa/Flows.md",
+    "Mimica/Medusa/architecture.md",
     "Mimica/Medusa/integrations (2).md",
     "K3s.md",
     "Mimica/Program Plan - MACH Commerce (Medusa + Keystone + Akeneo.md",
@@ -359,7 +360,6 @@
     "Mimica",
     "test git hzsa2.md",
     "test git hzsa.md",
-    "d9eck/kanban.md",
-    "d9eck/test git.md"
+    "d9eck/kanban.md"
   ]
 }
